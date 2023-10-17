@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-Login {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -20px;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 13, 9) 9%,
+    rgb(185, 46, 4) 93%
+  );
+  color: aliceblue;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}

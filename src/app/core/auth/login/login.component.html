@@ -1,0 +1,49 @@
+<div class="split left">
+  <div class="centered">
+    <h2>BLOG CON NESTJS®</h2>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div>
+      <div class="form">
+        <mat-card class="card">
+          <mat-card-title>¡Bienvenido!</mat-card-title>
+          <mat-card-content>
+            <div class="container-Login">
+              <mat-form-field>
+                <input
+                  [(ngModel)]="loginUser.email"
+                  matInput
+                  placeholder="Usuario"
+                />
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  [(ngModel)]="loginUser.password"
+                  matInput
+                  [type]="hide ? 'password' : 'text'"
+                  placeholder="Password"
+                />
+                <mat-icon matSuffix (click)="hide = !hide">{{
+                  hide ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button
+              (click)="login()"
+              class="button"
+              mat-raised-button
+              color="primary"
+            >
+              Login
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
